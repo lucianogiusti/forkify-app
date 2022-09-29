@@ -1,0 +1,26 @@
+{
+  "name": "forkify-app",
+  "version": "1.0.0",
+  "description": "Recipe App",
+  "dependencies": {
+    "sass": "^1.54.9"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucianogiusti/forkify-app.git"
+  },
+  "author": "Luciano Giusti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucianogiusti/forkify-app/issues"
+  },
+  "homepage": "https://github.com/lucianogiusti/forkify-app#readme"
+}
