@@ -78,7 +78,10 @@ class RecipeView extends View {
             </div>
           </div>
 
-          <div class="recipe__user-generated">
+          <div class="recipe__user-generated ${this._data.key ? "" : "hidden"}">
+            <svg>
+              <use href="${icons}#icon-user"></use>
+            </svg>
           </div>
           <button class="btn--round btn--bookmark">
             <svg class="">
@@ -95,16 +98,6 @@ class RecipeView extends View {
             ${this._data.ingredients
               .map(this._generateMarkupIngredient)
               .join("")}
-              <li class="recipe__ingredient">
-              <svg class="recipe__icon">
-                <use href="${icons}#icon-check"></use>
-              </svg>
-              <div class="recipe__quantity">0.5</div>
-              <div class="recipe__description">
-                <span class="recipe__unit">cup</span>
-                ricotta cheese
-              </div>
-            </li>
           </ul>
         </div>
 
